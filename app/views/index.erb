@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Craigslist Jr!</h1>
+  <p><b>Create New Post</b></p>
+
+
+  <form action="/categories" method="post">
+    <tr>Category</tr><br>
+    <select name="category[name]">
+     <option value="sell">WTS</option>
+     <option value="buy">WTB</option>
+    </select><br><br>
+    <tr>Title</tr><br>
+    <input type="text" name="post[title]"><br><br>
+    <tr>Description</tr><br>
+    <textarea rows="5" name="post[desc]"></textarea><br><br>
+    <input type="submit" value="SUBMIT">
+  </form>
+
+
+<br><br>
+  <table>
+    <tr>
+      <td><a href="/categories">Categories</a></td>
+    </tr>
+  </table>
+</div>
+
+

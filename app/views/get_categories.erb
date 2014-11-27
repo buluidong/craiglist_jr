@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Categories</h1>
+  <p><b>WTS</b> - (all want to sell stuff)</p>
+
+    <% @sell_post.each do |field| %>
+    <%=field.title + " - Description: " + field.desc%><br><br>
+    <%end%>
+
+  <p><b>WTB</b> - (all want to buy stuff)</p>
+
+    <% @buy_post.each do |field| %>
+    <%=field.title + " - Description: " + field.desc%><br><br>
+    <%end%>
+
+  <p><a href="/">New Post</a></p>
+
+</div>
